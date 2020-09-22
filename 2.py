@@ -1,11 +1,11 @@
 test_list = input("Введите что нибудь: ")
 
-max = len(test_list)
+max_index = len(test_list)
 start = 0
 
 prod_list = []
 
-if max % 2 == 0:
+if max_index % 2 == 0:
     while start <= max - 2:
         prod_list.insert(start, test_list[start + 1])
         prod_list.insert(start + 1, test_list[start])
