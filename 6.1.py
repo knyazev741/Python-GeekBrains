@@ -1,5 +1,3 @@
-line = input("Введите слово с маленькой буквы: ")
-
 def int_func(word):
     first = []
     for i in range(len(word)):
@@ -9,7 +7,11 @@ def int_func(word):
             first.append(word[i])
     return ''.join(first)
 
+a = [y for y in input("Введите слова с маленькой буквы через пробел: ").split()]
 
-print(int_func(line))
+res = []
 
-#Продолжение задачи в файле 6.1
+for item in a:
+    res.append(int_func(item))
+
+print(' '.join(res))
